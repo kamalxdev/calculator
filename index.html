@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="sheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <section id="main">
+            <div id="scr">
+                <div id="nav"><i class="fa-solid fa-clock-rotate-left" title="History" onclick="history_box.style.display='block'"></i><span id="history_box"><i class="fa-solid fa-xmark" onclick="history_box.style.display='none'"></i><span id="history"><p></p></span></span></div>
+                <span id="main-scr"><input type="text" value="" maxlength="9" autofocus></span>
+                <span id="q-scr"><p></p></span>
+            </div>
+            <div id="btns">
+                <ul>
+                    <li class="btn" onclick="functexe('ac')">AC</li>
+                    <li class="btn" onclick="functexe('del')"><i class="fa-solid fa-delete-left"></i></li>
+                    <li class="btn" onclick="functexe('percent')"><i class="fa-solid fa-percent albra"></i></li>
+                    <li class="btn" onclick="functexe('divide')"><i class="fa-solid fa-divide albra"></i></li>
+                    <li onclick="exebtn(7)">7</li>
+                    <li onclick="exebtn(8)">8</li>
+                    <li onclick="exebtn(9)">9</li>
+                    <li class="btn" onclick="functexe('multiply')"><i class="fa-solid fa-xmark albra"></i></li>
+                    <li onclick="exebtn(4)">4</li>
+                    <li onclick="exebtn(5)">5</li>
+                    <li onclick="exebtn(6)">6</li>
+                    <li class="btn" onclick="functexe('sub')"><i class="fa-solid fa-minus albra"></i></li>
+                    <li onclick="exebtn(1)">1</li>
+                    <li onclick="exebtn(2)">2</li>
+                    <li onclick="exebtn(3)">3</li>
+                    <li class="btn"onclick="functexe('add')"><i class="fa-solid fa-plus albra"></i></li>
+                    <li onclick="exebtn(0)">0</li>
+                    <li onclick="exebtn(00)">.</li>
+                    <li class="btn" onclick="equal()"><i class="fa-solid fa-equals eql"></i></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <script src="code.js"></script>
+</body>
+</html>
